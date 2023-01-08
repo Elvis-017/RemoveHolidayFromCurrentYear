@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+     <main>
+      <div class="container">
+        <h1 class="main-title">Labor days Database</h1>
+
+        <p class="description-text">Hello guys. this is and little App to extract a database of labor dates of a specific year. Only you to specify the holidays in the list below</p>
+  
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="card-title">Holiday list</h5>
+          </div>
+          <div class="card-body">
+            
+            <form class="form" action="" method="post">
+              <input id="input-holiday" class="form-control" type="date" name="" id="">
+              <button id="btn-add" type="button" class="add-labor-list-btn">&#10009 Add</button>
+            </form>
+
+            <ul class="labor-list">
+
+              <template id="template">
+                <li class="labor-item"></li>
+              </template>
+    
+            </ul>
+          </div>
+        </div>
+
+        <div class="container d-flex">
+          <button id="btn-create" class="create-labor-list-btn">Create</button>
+        </div>
+  
+      </div>
+      
+
+      <div id="json-content" class="container jumbotron hide">
+
+      </div>
+
+     </main>
+      <script type="module" src="App.js"></script>
+  </body>
+</html>

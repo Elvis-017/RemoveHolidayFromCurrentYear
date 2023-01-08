@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico-Regular.ttf');
+}
+
+
+:root {
+    --text-color: white;
+    --text-color-alternative: #F51800;
+    --container-color: #F52D11;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pacifico';
+}
+
+main {
+    padding: 5px;
+}
+
+.container {
+    margin: 10px;
+    padding: 5px;
+}
+
+.main-title,
+.description-text {
+    color: var(--text-color-alternative);
+    text-align: center;
+}
+
+.main-title {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.description-text {
+    font-size: 20px;
+}
+
+.card {
+    border: 1px solid lightgray;
+    margin: 5px auto;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.card-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: var(--container-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 15px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-control {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    width: 80%;
+    font-size: 20px;
+
+}
+
+.form-control:focus {
+    outline: 0px;
+}
+
+.form .add-labor-list-btn {
+    border: 1px solid white;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: var(--container-color);
+    font-weight: bold;
+    color: var(--text-color);
+    cursor: pointer;
+    width: 15%;
+}
+
+.labor-list {
+    list-style: none;
+    height: 200px;
+    overflow-y: auto;
+}
+
+
+.labor-list .labor-item {
+    padding: 5px;
+    border: 1px solid var(--container-color);
+    background-color: var(--container-color);
+    border-radius: 30px;
+    color: var(--text-color);
+    height: auto;
+    margin: 5px 1px;
+    float: left;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.create-labor-list-btn {
+    border: 1px solid var(--text-color-alternative);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--text-color);
+    background-color: var(--container-color);
+    cursor: pointer;
+    margin: 5px auto;
+    width: 25%;
+}
+
+
+.jumbotron {
+    background-color: lightgrey;
+    border: 1px solid gray;
+    width: 70%;
+    margin: auto;
+    height: 80px;
+    font-size: 12px;
+    overflow-x: auto;
+}
+
+.hide {
+    display: none;
+}
